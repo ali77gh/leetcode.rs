@@ -1,5 +1,5 @@
-mod add_two_numbers;
-mod find_the_index_of_the_first_occurrence_in_a_string;
-mod longest_common_prefix;
-mod roman_to_int;
-mod two_sum;
+mod problem_001_two_sum;
+mod problem_002_add_two_numbers;
+mod problem_013_roman_to_int;
+mod problem_014_longest_common_prefix;
+mod problem_028_find_the_index_of_the_first_occurrence_in_a_string;
