@@ -41,6 +41,17 @@ impl Solution {
         }
         true
     }
+
+    // 0ms beats 100% (even faster by removing Option equal operations)
+    // and simpler by using all() instead of for loop
+    pub fn is_palindrome_half_iter_unsafe(x: i32) -> bool {
+        let s = x.to_string(); // allocation
+        let mut r1 = s.chars().rev(); // no allocation
+        let mut r2 = s.chars(); // no allocation
+
+        (0..(s.len() / 2))
+            .all(|_| unsafe { r1.next().unwrap_unchecked() == r2.next().unwrap_unchecked() })
+    }
 }
 
 #[cfg(test)]
