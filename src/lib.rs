@@ -1,6 +1,7 @@
 #![allow(dead_code)]
 mod problem_001_two_sum;
 mod problem_002_add_two_numbers;
+mod problem_003_longest_substring_without_repeating_characters;
 mod problem_009_palindrome_number;
 mod problem_013_roman_to_int;
 mod problem_014_longest_common_prefix;
