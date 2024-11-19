@@ -5,6 +5,7 @@ mod problem_003_longest_substring_without_repeating_characters;
 mod problem_009_palindrome_number;
 mod problem_013_roman_to_int;
 mod problem_014_longest_common_prefix;
+mod problem_015_three_sum;
 mod problem_020_valid_parentheses;
 mod problem_021_merge_two_sorted_list;
 mod problem_026_remove_duplicates_from_sorted_array;
