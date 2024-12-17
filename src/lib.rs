@@ -12,4 +12,5 @@ mod problem_026_remove_duplicates_from_sorted_array;
 mod problem_027_remove_element;
 mod problem_028_find_the_index_of_the_first_occurrence_in_a_string;
 mod problem_035_search_insert_position;
+mod problem_226_invert_binary_tree;
 mod problem_412_fizz_buzz;
