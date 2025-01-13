@@ -1,6 +1,8 @@
 struct Solution;
 impl Solution {
-    pub fn longest_palindrome(s: String) -> String {
+    // time complexity: O(n*log(n))
+    // leetcode time: 386ms
+    pub fn longest_palindrome_1(s: String) -> String {
         let bytes = s.as_bytes();
         let len = bytes.len();
         let mut max_length = 0usize;
@@ -8,8 +10,6 @@ impl Solution {
         let mut max_j = 0usize;
         for i in 0..len {
             for j in i..len + 1 {
-                // dbg!(i, j);
-                dbg!(&bytes[i..j]);
                 if (&bytes[i..j]).is_palindrome() {
                     let size = j - i;
                     if size > max_length {
@@ -22,6 +22,21 @@ impl Solution {
         }
 
         s[max_i..max_j].to_string()
+    }
+
+    // leet code: 34ms
+    pub fn longest_palindrome(s: String) -> String {
+        let bytes = s.as_bytes();
+        let len = s.len();
+        for size in (0..len + 1).rev() {
+            for offset in 0..(len - size + 1) {
+                let slice = &bytes[offset..(offset + size)];
+                if slice.is_palindrome() {
+                    return s[offset..(offset + size)].to_string();
+                }
+            }
+        }
+        panic!("unreachable!")
     }
 }
 
