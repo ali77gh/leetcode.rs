@@ -13,6 +13,7 @@ mod problem_026_remove_duplicates_from_sorted_array;
 mod problem_027_remove_element;
 mod problem_028_find_the_index_of_the_first_occurrence_in_a_string;
 mod problem_035_search_insert_position;
+mod problem_036_valid_sudoku;
 mod problem_048_rotate_image;
 mod problem_058_length_of_last_word;
 mod problem_080_remove_duplicates_from_sorted_array;
