@@ -20,5 +20,6 @@ mod problem_080_remove_duplicates_from_sorted_array;
 mod problem_088_merge_sorted_array;
 mod problem_125_valid_palindrome;
 mod problem_169_majority_element;
+mod problem_206_reverse_linked_list;
 mod problem_226_invert_binary_tree;
 mod problem_412_fizz_buzz;
