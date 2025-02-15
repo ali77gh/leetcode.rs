@@ -18,6 +18,7 @@ mod problem_048_rotate_image;
 mod problem_058_length_of_last_word;
 mod problem_080_remove_duplicates_from_sorted_array;
 mod problem_088_merge_sorted_array;
+mod problem_092_reverse_linked_list_ii;
 mod problem_125_valid_palindrome;
 mod problem_169_majority_element;
 mod problem_206_reverse_linked_list;

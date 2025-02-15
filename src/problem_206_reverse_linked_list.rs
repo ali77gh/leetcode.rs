@@ -14,7 +14,21 @@ impl ListNode {
 struct Solution;
 
 impl Solution {
+    /// web actually don't need to use an array because link lists can also be generated from end to start
     pub fn reverse_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+        let mut reversed = None;
+        let mut current_node = head;
+
+        while let Some(mut node) = current_node {
+            current_node = node.next;
+            node.next = reversed;
+            reversed = Some(node);
+        }
+        reversed
+    }
+
+    /// with array (slower solution)
+    pub fn reverse_list_array(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         if head.is_none() {
             return head;
         }
