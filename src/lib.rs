@@ -23,4 +23,5 @@ mod problem_125_valid_palindrome;
 mod problem_169_majority_element;
 mod problem_206_reverse_linked_list;
 mod problem_226_invert_binary_tree;
+mod problem_392_is_subsequence;
 mod problem_412_fizz_buzz;
