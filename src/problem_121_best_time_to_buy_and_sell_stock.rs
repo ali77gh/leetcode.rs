@@ -2,6 +2,19 @@ struct Solution;
 impl Solution {
     // time complexity: O(n)
     pub fn max_profit(prices: Vec<i32>) -> i32 {
+        prices
+            .iter()
+            .skip(1)
+            .fold((prices[0], 0i32), |acc, x| match acc {
+                (b, p) if *x < b => (*x, p),       // change of buy
+                (b, p) if x - b > p => (b, x - b), // change of profit
+                (b, p) => (b, p),                  // no change
+            })
+            .1
+    }
+
+    // time complexity: O(n)
+    pub fn max_profit_loop(prices: Vec<i32>) -> i32 {
         let mut max = 0;
         let mut min = prices[0];
 
