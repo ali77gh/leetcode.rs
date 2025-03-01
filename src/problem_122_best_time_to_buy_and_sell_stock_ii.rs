@@ -1,6 +1,12 @@
 struct Solution;
 impl Solution {
     pub fn max_profit(prices: Vec<i32>) -> i32 {
+        (1..prices.len()).fold(0, |sum, i| {
+            let (left, right) = (prices[i - 1], prices[i]);
+            sum + if right > left { right - left } else { 0 }
+        })
+    }
+    pub fn max_profit_loop(prices: Vec<i32>) -> i32 {
         let mut profit = 0;
 
         for (i, today) in prices.iter().skip(1).enumerate() {
