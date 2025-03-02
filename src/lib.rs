@@ -23,6 +23,7 @@ mod problem_092_reverse_linked_list_ii;
 mod problem_121_best_time_to_buy_and_sell_stock;
 mod problem_122_best_time_to_buy_and_sell_stock_ii;
 mod problem_125_valid_palindrome;
+mod problem_151_reverse_words_in_a_string;
 mod problem_169_majority_element;
 mod problem_189_rotate_array;
 mod problem_206_reverse_linked_list;
