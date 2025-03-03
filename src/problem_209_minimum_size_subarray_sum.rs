@@ -1,6 +1,33 @@
+use std::cmp::min;
+
 struct Solution;
 impl Solution {
     pub fn min_sub_array_len(target: i32, nums: Vec<i32>) -> i32 {
+        let mut min_length = usize::MAX;
+        let (mut l, mut r, mut sum) = (0usize, 0usize, 0i32);
+        while r != nums.len() || l != nums.len() {
+            if sum < target && r != nums.len() {
+                // expand to right
+                sum += nums[r];
+                r += 1;
+            } else {
+                if sum >= target {
+                    min_length = min(min_length, r - l);
+                }
+                // collapse from left
+                sum -= nums[l];
+                l += 1;
+            }
+        }
+
+        (if min_length == usize::MAX {
+            0
+        } else {
+            min_length
+        }) as i32
+    }
+
+    pub fn min_sub_array_len_slow(target: i32, nums: Vec<i32>) -> i32 {
         for size in 1..nums.len() + 1 {
             if nums
                 .windows(size)
