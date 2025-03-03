@@ -27,6 +27,7 @@ mod problem_151_reverse_words_in_a_string;
 mod problem_169_majority_element;
 mod problem_189_rotate_array;
 mod problem_206_reverse_linked_list;
+mod problem_209_minimum_size_subarray_sum;
 mod problem_226_invert_binary_tree;
 mod problem_392_is_subsequence;
 mod problem_412_fizz_buzz;
