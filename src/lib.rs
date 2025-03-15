@@ -17,6 +17,7 @@ mod problem_036_valid_sudoku;
 mod problem_048_rotate_image;
 mod problem_058_length_of_last_word;
 mod problem_066_plus_one;
+mod problem_069_sqrtx;
 mod problem_080_remove_duplicates_from_sorted_array;
 mod problem_088_merge_sorted_array;
 mod problem_092_reverse_linked_list_ii;
