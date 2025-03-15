@@ -15,6 +15,7 @@ mod problem_028_find_the_index_of_the_first_occurrence_in_a_string;
 mod problem_035_search_insert_position;
 mod problem_036_valid_sudoku;
 mod problem_048_rotate_image;
+mod problem_050_powx_n;
 mod problem_058_length_of_last_word;
 mod problem_066_plus_one;
 mod problem_069_sqrtx;
