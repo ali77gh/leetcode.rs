@@ -32,7 +32,7 @@ mod problem_189_rotate_array;
 mod problem_206_reverse_linked_list;
 mod problem_209_minimum_size_subarray_sum;
 mod problem_226_invert_binary_tree;
-mod problem_2352__first_letter_to_appear_twice;
+mod problem_2352_first_letter_to_appear_twice;
 mod problem_322_coin_change;
 mod problem_380_insert_delete_getrandom_o1;
 mod problem_392_is_subsequence;
